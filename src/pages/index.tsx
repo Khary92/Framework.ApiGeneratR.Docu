@@ -88,7 +88,7 @@ export default function Home() {
                               fontSize: '1.2rem',
                               boxShadow: '0 4px 14px 0 rgba(46, 115, 234, 0.39)'
                           }}
-                          to="/Framework.ApiGeneratR/docs/Setup/GlobalConfigurations">
+                          to="/docs/Setup/GlobalConfigurations">
                         🚀 Project Setup
                     </Link>
 
@@ -101,7 +101,7 @@ export default function Home() {
                               fontSize: '1.2rem',
                               boxShadow: '0 4px 14px 0 rgba(140, 21, 233, 0.39)'
                           }}
-                          to="/Framework.ApiGeneratR/docs/Quickstart%20Guide/BasicComponents">
+                          to="/docs/Quickstart%20Guide/BasicComponents">
                         ⏱️ Quickstart Guide
                     </Link>
 
@@ -114,7 +114,7 @@ export default function Home() {
                               fontSize: '1.2rem',
                               boxShadow: '0 4px 14px 0 rgba(34, 221, 210, 0.39)'
                           }}
-                          to="/Framework.ApiGeneratR/docs/Customization/ToDo">
+                          to="/docs/Customization/ToDo">
                         🤓 Customization
                     </Link>
                 </main>

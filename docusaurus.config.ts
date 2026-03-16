@@ -8,10 +8,10 @@ const config: Config = {
   favicon: 'img/Icon.svg',
 
   url: 'https://khary92.github.io',
-  baseUrl: '/Framework.ApiGeneratR/',
+  baseUrl: '/Framework.ApiGeneratR.Docu/',
 
   organizationName: 'Khary92',
-  projectName: 'Framework.ApiGeneratR',
+  projectName: 'Framework.ApiGeneratR.Docu',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
