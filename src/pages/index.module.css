@@ -3,21 +3,127 @@
  * and scoped locally.
  */
 
-.heroBanner {
-  padding: 4rem 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-}
-
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
-}
-
 .buttons {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.page {
+  min-height: calc(100vh - var(--ifm-navbar-height));
+  display: flex;
+  flex-direction: column;
+  background:
+    linear-gradient(180deg, rgba(13, 17, 23, 0.92) 0%, rgba(13, 17, 23, 1) 100%);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.hero {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 1.5rem 2rem;
+  text-align: center;
+  background: linear-gradient(135deg, #17072b 0%, #172d67 100%);
+  color: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
+  box-sizing: border-box;
+  min-height: 0;
+}
+
+.logo {
+  width: clamp(180px, 22vw, 320px);
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  margin-bottom: 1.5rem;
+  filter: drop-shadow(0 0 10px #22ddd2);
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(2.8rem, 6vw, 4.5rem);
+  font-weight: 900;
+  color: #22ddd2;
+  line-height: 1.05;
+}
+
+.subtitle {
+  max-width: 820px;
+  margin: 1rem auto 0;
+  font-size: clamp(1.2rem, 2.6vw, 1.6rem);
+  font-weight: 300;
+  color: #fff;
+}
+
+.kicker {
+  margin: 1.5rem 0 0;
+  font-size: 1.05rem;
+  color: #22ddd2;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.actions {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(180px, 1fr));
+  gap: 1rem;
+  justify-content: center;
+  align-items: stretch;
+  padding: 1.5rem 1.5rem 2rem;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.actionButton {
+  width: 100%;
+  min-width: 0;
+  padding: 1.1rem 2rem;
+  font-size: 1.05rem;
+  border: none;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+  justify-content: center;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.blueButton {
+  background-color: #2e73ea;
+  color: white;
+  box-shadow: 0 4px 14px 0 rgba(46, 115, 234, 0.39);
+}
+
+.purpleButton {
+  background-color: #8c15e9;
+  color: white;
+  box-shadow: 0 4px 14px 0 rgba(140, 21, 233, 0.39);
+}
+
+.cyanButton {
+  background-color: #22ddd2;
+  color: #17072b;
+  box-shadow: 0 4px 14px 0 rgba(34, 221, 210, 0.39);
+}
+
+@media screen and (max-width: 996px) {
+  .hero {
+    padding: 3rem 1rem 1.5rem;
+  }
+
+  .actions {
+    grid-template-columns: 1fr;
+    max-width: 420px;
+    padding: 1rem 1rem 1.5rem;
+  }
+
+  .actionButton {
+    white-space: normal;
+  }
 }

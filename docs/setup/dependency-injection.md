@@ -21,7 +21,7 @@ makes it easy to replace the implementation with a mock or a custom implementati
 
 Add the generated API client services to your `IServiceCollection`:
 
-```csharp
+```csharp title="Program.cs"
 // Configure HttpClient with a base URL
 services.AddHttpClient<IApiClient, ApiHttpClient>(client =>
 {
@@ -36,7 +36,7 @@ services.AddGeneratedClientApiServices();
 
 Add the generated server-side services and endpoints:
 
-```csharp
+```csharp title="Program.cs"
 // Register handler services and WebSocket connection service
 builder.Services.AddGeneratedHandlerServices();
 builder.Services.AddGeneratedSocketConnectionService();
