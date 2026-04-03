@@ -1,5 +1,5 @@
 ---
-sidebar_position: 0
+sidebar_position: 1
 title: Overview
 ---
 
@@ -17,4 +17,11 @@ them in the example project. If something is not clear, refer to this guide once
 We will create a request, a command, an event, an event handler, and a client service using said requests and receiving
 said event. The use case will be creating a new user and retrieving all users. The following chapter shows the basic
 components of the API. Looking at it might help understand more quickly what is going on.
+
+## Quick links
+- [Define a Request](./create-requests)
+- [Request Handler](./create-request-handler)
+- [Define an Event](./create-events)
+- [Connecting to Channel](../setup/channels.md)
+- [Client Service](./create-client-service)
 

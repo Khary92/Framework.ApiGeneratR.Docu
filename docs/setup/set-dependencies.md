@@ -13,7 +13,7 @@ To allow **ApiGeneratR** to generate the required code, the Client and Server pr
 
 ### Client -> Definitions
 
-The Client project needs a reference to the Definitions project so it can use the shared contracts, request types, events, and models.
+The Client project(s) needs a reference to the Definitions project so it can use the shared contracts, request types, events, and models.
 
 ```xml
 <!-- In your Client.csproj -->
@@ -53,6 +53,3 @@ If you encounter issues, review the previous setup steps and verify that:
 - `.globalconfig` contains the correct project names
 - the required packages and analyzer references are configured
 
-:::success Next Step
-Your base infrastructure is now in place. You can start defining your first requests and events.
-:::

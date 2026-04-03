@@ -32,10 +32,6 @@ Add the following entries to your `.csproj` files.
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" />
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" />
 </ItemGroup>
-
-<ItemGroup>
-    <ProjectReference Include="..\ApiGeneratR\ApiGeneratR.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
-</ItemGroup>
 ```
 
 ### 2.2 Server Project
@@ -43,9 +39,6 @@ Add the following entries to your `.csproj` files.
 ```xml
 <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" />
-</ItemGroup>
-
-<ItemGroup>
     <ProjectReference Include="..\ApiGeneratR\ApiGeneratR.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
 </ItemGroup>
 ```
@@ -66,7 +59,5 @@ A NuGet package would also be possible, but including the project directly gives
 
 :::warning Important
 Make sure the project names are configured correctly in `.globalconfig`.
-
 This is required for correct source generation.
 :::
-```
