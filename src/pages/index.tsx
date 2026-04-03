@@ -28,15 +28,15 @@ export default function Home() {
                 </section>
 
                 <section className={styles.actions}>
-                    <Link className={`button button--lg ${styles.actionButton} ${styles.blueButton}`} to="/docs/Setup/GlobalConfigurations">
+                    <Link className={`button button--lg ${styles.actionButton} ${styles.blueButton}`} to="/docs/setup/configuration">
                         🚀 Project Setup
                     </Link>
 
-                    <Link className={`button button--lg ${styles.actionButton} ${styles.purpleButton}`} to="/docs/Quickstart%20Guide/BasicComponents">
+                    <Link className={`button button--lg ${styles.actionButton} ${styles.purpleButton}`} to="/docs/quickstart-guide/overview">
                         ⏱️ Quickstart Guide
                     </Link>
 
-                    <Link className={`button button--lg ${styles.actionButton} ${styles.cyanButton}`} to="/docs/Customization/ToDo">
+                    <Link className={`button button--lg ${styles.actionButton} ${styles.cyanButton}`} to="/docs/customization/architecture">
                         🤓 Customization
                     </Link>
                 </section>
